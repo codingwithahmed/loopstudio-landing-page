@@ -169,6 +169,8 @@
     margin: 5px;
     margin-top: 10px;
     transition: all 0.25s;
+    cursor: pointer;
+
 }
 
 #img-1:hover{
@@ -213,3 +215,44 @@
     width: 200px;
     text-transform: uppercase;
 }
+
+.footer-text{
+    color: hsl(0, 0%, 55%);
+    font-family: 'Alata';
+}
+
+.footer-row{
+ position: relative;
+ top: 5vh;
+}
+.footer-menu{
+    position: relative;
+    right: 50px;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    display: inline-block;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.menu-item a:after{
+    background: none repeat scroll 0 0 ;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background-color: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.menu-item a:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
