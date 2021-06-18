@@ -8,14 +8,15 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .nav-bar{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 1080px;
+    width: 950px;
     margin: auto;
     margin-top: 5vh;
 
@@ -50,5 +51,165 @@
     font-size: 65px;
     font-family: 'Josefin Sans';
     color: white;
+    text-transform: uppercase;
+}
+
+.interactive{
+    height: 60vh;
+    padding-top: 50px;
+}
+
+.interactive-main-img{
+    margin: 50px;
+    width: 600px;
+}
+.interactive-main{
+    display: flex;
+    flex-direction: row;
+    
+}
+.interactive-main-box{
+    position: relative;
+    background-color: white;
+    top: 200px;
+    left: -250px;
+    height: 300px;
+}
+.interactive-main-box-inclose{
+    padding: 70px;
+    width: 500px;
+}
+
+.interactive-main-box-heading{
+    font-size: 42px;
+    font-family: 'Josefin Sans';
+    color: black;
+    text-transform: uppercase;
+}
+.interactive-main-box-para{
+    font-size: 19px;
+    font-family: 'Josefin Sans';
+    color: black;
+}
+
+.creation{
+    min-height: 60vh;
+    padding-top: 70px;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 1;
+}
+.creation-heading{
+    font-size: 48px;
+    font-family: 'Josefin Sans';
+    color: black;
+    text-transform: uppercase;
+}
+
+.creation-btn{
+    font-size: 24px;
+    padding: 10px;
+    padding-left:50px;
+    padding-right: 50px;
+    font-family: 'Alata';
+    color: black;
+    text-transform: uppercase;
+    background-color: white;
+    border: 2px black solid;
+    font-weight: 300;
+    cursor: pointer;
+    transition: all 0.25s;
+}
+.creation-btn:hover,
+.creation-btn:focus {
+    color: white;
+    background-color: black;
+    border: 2px black solid;
+    transition: all 0.25s;
+}
+
+.collage{
+    padding-top: 70px;
+}
+
+#img-1{
+    background-image:linear-gradient( to bottom , #ffffff00 ,#00000085), url('../images/desktop/image-deep-earth.jpg');
+}
+#img-2{
+    background-image: linear-gradient( to bottom , #ffffff00 ,#00000085),url('../images/desktop/image-night-arcade.jpg');
+
+}
+#img-3{
+    background: linear-gradient( to bottom , #ffffff00 ,#00000085), url('../images/desktop/image-soccer-team.jpg');
+
+}
+#img-4{
+    background-image: linear-gradient( to bottom , #ffffff00 ,#00000085),url('../images/desktop/image-grid.jpg') ;
+
+}
+#img-5{
+    background-image: linear-gradient( to bottom , #ffffff00 ,#00000085),url('../images/desktop/image-from-above.jpg');
+}
+#img-6{
+    background-image: linear-gradient( to bottom , #ffffff00 ,#00000085),url('../images/desktop/image-pocket-borealis.jpg');
+}
+#img-7{
+    background-image: linear-gradient( to bottom , #ffffff00 ,#00000085),url('../images/desktop/image-curiosity.jpg');
+}
+#img-8{
+    background-image: linear-gradient( to bottom , #ffffff00 ,#00000085),url('../images/desktop/image-fisheye.jpg');
+}
+
+.row-item{
+    height: 450px;
+    width: 256px;
+    margin: 5px;
+    margin-top: 10px;
+    transition: all 0.25s;
+}
+
+#img-1:hover{
+    background-image:linear-gradient( to bottom , #dadada9d ,#dadada9d), url('../images/desktop/image-deep-earth.jpg');
+}
+#img-2:hover{
+    background-image: linear-gradient( to bottom , #dadada9d ,#dadada9d),url('../images/desktop/image-night-arcade.jpg');
+
+}
+#img-3:hover{
+    background: linear-gradient( to bottom , #dadada9d ,#dadada9d), url('../images/desktop/image-soccer-team.jpg');
+
+}
+#img-4:hover{
+    background-image: linear-gradient( to bottom , #dadada9d ,#dadada9d),url('../images/desktop/image-grid.jpg') ;
+
+}
+#img-5:hover{
+    background-image: linear-gradient( to bottom , #dadada9d ,#dadada9d) ,url('../images/desktop/image-from-above.jpg');
+}
+#img-6:hover{
+    background-image: linear-gradient( to bottom , #dadada9d ,#dadada9d) ,url('../images/desktop/image-pocket-borealis.jpg');
+}
+#img-7:hover{
+    background-image: linear-gradient( to bottom , #dadada9d ,#dadada9d) ,url('../images/desktop/image-curiosity.jpg');
+}
+#img-8:hover{
+    background-image: linear-gradient( to bottom , #dadada9d ,#dadada9d) ,url('../images/desktop/image-fisheye.jpg');
+}
+
+.row-item:hover > .collage-img-text {
+    color: black;
+}
+
+.collage-img-text{
+    position: relative;
+    top: 80%;
+    left: 15%;
+    color: white;
+    font-size: 36px;
+    font-family: 'Josefin Sans';
+    width: 200px;
     text-transform: uppercase;
 }
